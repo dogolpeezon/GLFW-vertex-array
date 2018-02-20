@@ -11,7 +11,6 @@ private:
     bool _run;
     Render *_render;
     Input *_input;
-    //Shader * _shader;
     GLFWwindow *g_window;
 
     Anim( bool run );
