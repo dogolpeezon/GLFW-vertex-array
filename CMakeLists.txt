@@ -9,10 +9,6 @@ include( GNUInstallDirs )
 # set current glfwm version
 set( GLFWM_VERSION_MAJOR "3" )
 set( GLFWM_VERSION_MINOR "2" )
-set( GLFWM_VERSION_PATCH "0" )
-#set( GLFWM_VERSION_TWEAK "" )
-#set( GLFWM_VERSION "${GLFWM_VERSION_MAJOR}.${GLFWM_VERSION_MINOR}" )
-#set( GLFWM_VERSION_FULL "${GLFWM_VERSION}.${GLFWM_VERSION_PATCH}${GLFWM_VERSION_TWEAK}" )
 # OpenGL and GLFW
 find_package( OpenGL REQUIRED )
 find_package( glfw3 REQUIRED )
