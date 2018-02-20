@@ -10,7 +10,6 @@ private:
     ~Input();
 
 public:
-    void update();
     static Input &getInput();
     static void destroyInput();
     static void keyCallback( GLFWwindow *g_window, int key, int scancode, int action, int mods );
