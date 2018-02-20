@@ -19,4 +19,4 @@ or use:
 g++ -o run main.cpp anim.cpp input.cpp render.cpp draw.cpp -lGLEW -lglfw3 -lGL -lX11 -lXi -lXrandr -lXxf86vm -lXinerama -lXcursor -lrt -lm -pthread -ldl
 
 
-
+This could of course been maanged all in one file.. but i simply made an exercise in abracting out into OOP.
