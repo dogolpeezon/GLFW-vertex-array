@@ -1,5 +1,3 @@
-#include <glad/glad.h>
-
 #include "draw.h"
 #include "anim.h"
 
@@ -46,10 +44,9 @@ void Draw::drawCube()
 
 }
 
-
 float vInit(GLfloat *vertices, GLfloat *colors){
 
-	// Enable state for vertex and color
+    // Enable state for vertex and color
     glEnableClientState(GL_VERTEX_ARRAY);
     glEnableClientState(GL_COLOR_ARRAY);
     glVertexPointer(3, GL_FLOAT, 0, vertices);
@@ -57,7 +54,6 @@ float vInit(GLfloat *vertices, GLfloat *colors){
 
     // Send data : 24 vertices
     glDrawArrays(GL_QUADS, 0, 24);
-    // work the amount of verts for pyramid
 
     // Cleanup states
     glDisableClientState(GL_COLOR_ARRAY);
