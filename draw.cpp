@@ -63,7 +63,6 @@ float vInit(GLfloat *vertices, GLfloat *colors){
 }
 
 Draw &Draw::getDraw(){
-    std::cout << "Enter getDraw.." << '\n';
     static Draw *draw = 0;
     if( draw == NULL ){
         draw = new Draw();
@@ -72,7 +71,6 @@ Draw &Draw::getDraw(){
 }
 
 void Draw::destroyDraw(){
-    std::cout << "Enter destroyDraw.." << '\n';
     Draw *draw = &getDraw();
     delete draw;
 }
