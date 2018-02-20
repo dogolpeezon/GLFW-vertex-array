@@ -8,9 +8,8 @@ Input::Input(): g_window(glfwGetCurrentContext()){}
 Input::~Input(){}
 
 void Input::keyCallback( GLFWwindow *g_window, int key, int scancode, int action, int mods ){
-    //std::cout << "Enter KeyCallback.." << '\n';
     // Check if user presses escape.. if do close
-	if ( key == GLFW_KEY_ESCAPE && action == GLFW_PRESS ){
+  if ( key == GLFW_KEY_ESCAPE && action == GLFW_PRESS ){
         glfwSetWindowShouldClose( g_window, GL_TRUE );
     }
 
@@ -36,11 +35,6 @@ void Input::keyCallback( GLFWwindow *g_window, int key, int scancode, int action
   }
 }
 
-void Input::update(){
-    std::cout << "Enter Update.." << '\n';
-
-}
-
 Input &Input::getInput(){
     std::cout << "Enter getInput.." << '\n';
     static Input *input;
@@ -48,7 +42,6 @@ Input &Input::getInput(){
         glfwSetInputMode( glfwGetCurrentContext(), GLFW_CURSOR, GLFW_CURSOR_NORMAL );
         input = new Input();
     }
-
     return *input;
 }
 
