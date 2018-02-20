@@ -36,7 +36,6 @@ void Input::keyCallback( GLFWwindow *g_window, int key, int scancode, int action
 }
 
 Input &Input::getInput(){
-    std::cout << "Enter getInput.." << '\n';
     static Input *input;
     if ( input == NULL ){
         glfwSetInputMode( glfwGetCurrentContext(), GLFW_CURSOR, GLFW_CURSOR_NORMAL );
@@ -46,7 +45,6 @@ Input &Input::getInput(){
 }
 
 void Input::destroyInput(){
-    std::cout << "Enter destroyInput.." << '\n';
     Input *input = &getInput();
     delete input;
 }
